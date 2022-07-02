@@ -1,14 +1,8 @@
-using System.Collections;
 using Api.Endpoints;
 using Database;
 using Database.DataAccess;
 
 var builder = WebApplication.CreateBuilder();
-
-foreach (DictionaryEntry entry in Environment.GetEnvironmentVariables())
-{
-    Console.WriteLine($"{entry.Key} {entry.Value}");
-}
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

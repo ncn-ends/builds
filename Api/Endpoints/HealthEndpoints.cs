@@ -11,7 +11,7 @@ public static class HealthEndpoints
     {
         try
         {
-            return Results.Ok("pong");
+            return Results.Ok("pong2");
         }
         catch (Exception e)
         {
